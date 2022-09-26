@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/*
+		IT 1430-Web Page Development Assignment 4
+		Author: Omari Barrett
+		Date: 10/20/2020
+		Due: 10/21/2020
+  */
+
+/* HTML Styles */
+html { background-color: #585850; }
+
+/* Body Styles */
+body {
+	/*background-color: #74848f;*/
+	background-image: url(originals/jubilife_city.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	margin: auto;
+	width: 960px;
+	padding-left: 10%;
+	padding-right: 10%;
+	
+	font-family: "Georgia", Julee, serif;
+}	
+
+/* Header Styles */
+header {
+	text-align: center;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #555e69;
+	border-radius: 25px 25px 0px 0px;
+	
+	background-color: #4b5987;
+}
+
+
+/* Nav Styles */
+nav {
+	border-width: 1px;
+	border-bottom: solid;
+	border-color: #555e69;
+	border-radius: 50px;
+	
+	background-color: #69a1bc;
+	
+	padding-left: 5%;
+	padding-right: 5%;
+	
+	list-style-type: none;
+	text-align: center;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover { 
+	background-color: #f1ebef;
+	color: #5dd786;
+	
+	border-color: #555e69;
+	border-width: 1px;
+}
+	
+/* Main Styles */
+main{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #555e69;
+	
+	background-color: #79b2c3;
+	
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+main h2 { color: #585850; }
+
+main h3 { 
+	color: #3e6829; 
+	
+	font-family: Julee;
+	font-style: italic;
+}
+
+main p { color: #f1ebef; }	
+
+main ul {
+	list-style: none;
+	color: #f1ebef;
+}	
+
+main a { color: #3e6829; }
+
+main a:hover { background-color: #f1ebef; }
+
+/* Footer Styles */
+footer {
+	text-align: center;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #555e69;
+	border-radius: 0px 0px 25px 25px;
+	
+	background-color:#4b5987;
+}	
+
+footer a { color: #5dd786; }
+
+/* Points of Interest Images Style*/
+#interests img {
+	margin: auto 5% auto;
+	float: left;
+	
+	border: 5px double #3e6829;
+	border-radius: 15px;
+}	
+
+.clearboth { clear: both; }
+
+/* Businessess Tables Style*/
+table {
+	margin: auto;
+	border: 5px solid #555e69;
+	border-collapse: collapse;
+	width:85%;
+	
+}
+
+caption {
+	caption-side: bottom ;
+	text-align: left;
+	font-size: 0.8em;
+	padding: 10px;
+}
+
+th, td { 
+	padding: 10px; 
+	border-bottom: 5px solid #555e69;
+	text-align: center;
+}
+
+tr:nth-of-type(even) {
+	background-color: #69a1bc;
+	color: #585850;
+}
+
+tr:nth-of-type(odd) { 
+	background-color: #65678a;
+	color: #f1ebef; 
+}
+
+tr:nth-of-type(odd):not(:first-of-type) th{
+	border-right: 5px solid #555e69;
+	color: #5dd786;
+}
+
+tr:nth-of-type(even) th{
+	border-right: 5px solid #555e69;
+	color: #3e6829;
+}		
+
+tr:first-of-type {
+	background-color: #4b5987;
+	color:#79b2c3;
+	letter-spacing: 2px;
+	border-bottom: 5px solid #555e69;
+}
+
+/* Event Form Style*/
+form {
+	background-color: #3e6829;
+	border: 5px double #5dd786;
+	border-radius: 25px;
+	margin: auto;
+}
+
+fieldset {
+	background-color: #5dd786;
+	border: 2px inset #f1ebef;
+	margin: 3%;
+}
+
+legend {
+	border: 2px solid #555e69;
+	border-radius: 10px;
+	
+	background-color: #4b5987;
+	color:#f1ebef;
+}
+
+label {
+	margin: 5px;
+	width: 10%;
+	display: inline-block;
+	
+}
+
+input, select, textarea { margin-left: 25%; }
+
+input[type= "radio"]{
+	margin: initial;
+	margin-top: 15px;
+}
+
+input[type= "submit"] {
+	margin: initial;
+	margin-left: 44%;
+	background-color: #5dd786;
+	border: 2px inset #f1ebef;
+	font-size: 1.5em;
+}

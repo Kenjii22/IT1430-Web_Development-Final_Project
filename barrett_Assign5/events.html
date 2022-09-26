@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang= "en">
+	<head>
+		<!--
+		IT 1430-Web Page Development Assignment 5
+		Author: Omari Barrett
+		Date: 11/11/2020
+		Due: 11/12/2020
+		  -->
+	  
+		<meta charset = "UTF-8" />
+		<title> Barrett: Assign 5 </title>
+		
+		<link href= "barrett_styles.css" rel= "stylesheet" />
+		<script src = "barrett_script.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<img src= "jubilife_logo.png" alt= "Site Logo" />
+	
+			<h1> The City of Joy (Pokémon) </h1>
+		</header>
+
+		<nav>
+			<a href= "index.html">&nbsp;Home&nbsp;</a>
+			<a href= "interests.html">&nbsp;Points of Interest&nbsp;</a>
+			<a href= "businesses.html">&nbsp;Local Businesses&nbsp;</a>
+			<a href= "events.html">&nbsp;Submit Events&nbsp;</a>
+			<a href= "index.html#CO">&nbsp;City Officials&nbsp;</a>
+			<a href= "index.html#RCN">&nbsp;Related City News&nbsp;</a>
+		</nav>
+		
+		<main>
+			<h2> Submit an Upcoming Event </h2>
+			
+			<form id= "eForm">
+				<fieldset>
+					<legend> Requestor Information </legend>
+					<label for= "rName"> Name </label>
+					<input name= "reqName" id= "rName" type= "text">
+					<br>
+					<label for= "rEmail"> Email </label>
+					<input name= "reqEmail" id= "rEmail" type= "email">
+					<br>
+					<label for="rPhone"> Phone </label>
+					<input name="reqPhone" id= "rPhone" type= "tel">
+					<br>
+					<label for="rWeb"> Website </label>
+					<input name="reqWeb" id= "rWeb" type= "url">
+				</fieldset>
+				
+				<fieldset>
+					<legend> Location Information </legend>
+					<label for="eName"> Name </label>
+					<input name="eventName" id= "eName" type= "text">
+					<br>
+					<label for="eLoc"> Location </label>
+					<select name="eventLoc" id= "eLoc">
+						<option value= ""> &nbsp; </option>
+						<option value= "TS"> Trainer School </option>
+						<option value= "GTS"> Global Trade Station </option>
+						<option value= "TPC"> The Pokétch Company </option>
+						<option value= "JTV"> Jubilife TV </option>
+					</select>
+					<br>
+					<label for="eDate"> Date </label>
+					<input name="eventDate" id= "eDate" type= "date">
+					<br>
+					*Admission Cost* <br>
+					<input name="eventCost" id= "eCost1" type= "radio" value= "0" checked>
+					<label for="eCost1" > Free </label>
+					<input name="eventCost" id= "eCost2" type= "radio" value= "50">
+					<label for="eCost2"> ¥50 </label>
+					<br>
+					<input name="eventCost" id= "eCost3" type= "radio" value= "100">
+					<label for="eCost3"> ¥100 </label>
+					<input name="eventCost" id= "eCost4" type= "radio" value= "250">
+					<label for="eCost4"> ¥250 </label>
+				</fieldset>
+				
+				<fieldset>
+					<legend> Event Information </legend>
+					<label for="eDes"> Event Description </label>
+					<textarea name="eventDesc" id= "eDes"></textarea>
+					<br>
+					<label for="eAge"> Minimum Age Restrictions </label>
+					<input name="eventAge" id= "eAge" type= "number" min= "6" max= "60">
+				</fieldset>
+				
+				<fieldset id= "sButton">
+					<input type= "submit" value= "Submit">
+				</fieldset>
+			</form>
+		</main>
+		
+		<footer>
+			<p> &copy; Fall 2020, <a href= "mailto:ob007@georgiasouthern.edu"> 
+									ob007@georgiasouthern </a> <script> document.write(Date()); </script></p>
+		</footer>
+		<script>
+			var refer = document.getElementById("eForm");
+			sButton.addEventListener("click", function(refer) { submitEvents(refer); });
+		</script>
+	</body>
+</html>

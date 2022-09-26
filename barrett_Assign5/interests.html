@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang= "en">
+	<head>
+		<!--
+		IT 1430-Web Page Development Assignment 5
+		Author: Omari Barrett
+		Date: 11/11/2020
+		Due: 11/12/2020
+		  -->
+	  
+		<meta charset = "UTF-8" />
+		<title> Barrett: Assign 5 </title>
+		
+		<link href= "barrett_styles.css" rel= "stylesheet" />
+		<script src = "barrett_script.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<h1> <img src= "jubilife_logo.png" alt= "Site Logo" /> </h1>
+	
+			<h1> The City of Joy (Pokémon) </h1>
+		</header>
+
+		<nav>
+			<a href= "index.html">&nbsp;Home&nbsp;</a>
+			<a href= "interests.html">&nbsp;Points of Interest&nbsp;</a>
+			<a href= "businesses.html">&nbsp;Local Businesses&nbsp;</a>
+			<a href= "events.html">&nbsp;Submit Events&nbsp;</a>
+			<a href= "index.html#CO">&nbsp;City Officials&nbsp;</a>
+			<a href= "index.html#RCN">&nbsp;Related City News&nbsp;</a>
+			
+		</nav>
+		
+		<main id= "interests">
+			<h2> Points of Interest </h2>
+			
+			<img src= "images/pokecenter.jpg" alt= "Pokémon Center" >
+			<h3> Pokémon Center </h3>
+				<p> An essential stop for any trainer, new or veterain. The 
+					pokémon Center is a non-profit, free healthcare service 
+					for all pokémon. It also serves as a place for trainers 
+					to meet up to chat, trade, or set up battls with one 
+					another. And at every center, you are sure to be greeted 
+					by a Nurse Joy.<br class= "clearboth"></p>
+				
+			<img src= "images/trainerSchool.jpg" alt= "Trainer School" >
+			<h3> Trainer School </h3>
+				<p> If you are a new trainer and want to brush up on your 
+					knowledge on these creatures we call pokémon, come on 
+					down to the Trainer School. The doors are even open to 
+					those who are preparing to start their own journies.<br class= "clearboth"> </p>
+			
+			<img src= "images/poketchHQ.jpg" alt= "Pokétch Company" >
+			<h3> The Pokétch Company </h3>
+				<p> The Pokétch Company HQ, creators of the illustrious pokémon
+					watch, is located in north-west side of Jubilife City. It 
+					is worth visiting as they are continuously creating new apps
+					and fetures that are more than willing to share with visitors.<br class= "clearboth"></p>
+			
+			<img src= "images/jubilifeTV.jpg" alt= "Jubilife TV" >
+			<h3> Jubilife TV </h3>
+				<p> Welcome to Jubilife TV, the top brodcasting station in all
+					of Sinnoh. Come on down to participate in our pokémon 
+					dress-up. Or win a prize by participating in our Pokémon 
+					Lottery Corner. Top prize will always result in a shiny 
+					new masterball!<br class= "clearboth"></p>
+			
+			<img src= "images/gts.jpg" alt= "Global Trade Station" >
+			<h3> Global Trade Station (GTS) </h3>
+				<p> Freshly built in the west side of the city,
+					Jubilife City proudly presents the Global Trade Station! By
+					utilizing cutting edge technology, the Global Trade Station, also
+					known as the GTS, is a plase where trainers can come and trade their
+					pokémon with other trainers far away in distant regions. <br class= "clearboth"></p>
+			
+		</main>
+		
+		<footer>
+			<p> &copy; Fall 2020, <a href= "mailto:ob007@georgiasouthern.edu"> 
+									ob007@georgiasouthern </a> <script> document.write(Date()); </script></p>
+		</footer>
+	<script>
+		var img = document.getElementsByTagName("img");
+		img[1].addEventListener("click", function() { poi(this); });
+		img[2].addEventListener("click", function() { poi(this); });
+		img[3].addEventListener("click", function() { poi(this); });
+		img[4].addEventListener("click", function() { poi(this); });
+		img[5].addEventListener("click", function() { poi(this); });
+	</script>
+	</body>
+	
+</html>
